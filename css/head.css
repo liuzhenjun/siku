@@ -1,0 +1,112 @@
+.head{
+	width: 100%;
+	position: relative;
+	z-index: 62;
+	background: #fff;
+	height: 163px;
+}
+.head .head_top{
+	width: 990px;
+	margin: 0 auto;
+}
+.head_top{
+	height: 30px;
+	background: #fff;
+	z-index: 90;
+	line-height: 30px
+}
+.head_top ul{
+	float: right;
+	font-size: 12px;
+	color: #999999;
+}
+.head_top ul li{
+	list-style: none;
+	float: left;
+	padding-left: 15px;
+
+}
+.head_top ul li a{
+	color: #999999;
+	text-decoration: none;
+	cursor: pointer;
+}
+.head_top ul li a:hover{
+	color: #574b96;
+}
+.head_top ul li img{
+	vertical-align: middle;
+}
+.head_logo{
+	position: absolute;
+	left:50%;
+	top: 20px;
+	width: 205px;
+	height: 135px;
+	margin-left: -615px;
+}
+.head_search{
+	position: relative;
+	width: 1200px;
+	height: 133px;
+	z-index: 89;
+	margin:0 auto;
+}
+
+
+.head_searchbar{
+	position: absolute;
+	left: 200px;
+	top: 25px;
+}
+.head_searchbar input{
+	width: 400px;
+	height: 33px;
+	border: 1px solid #574b96;
+	float: left;
+	padding-left: 10px;
+}
+.head_searchbar button{
+	float: left;
+	width: 45px;
+	height:35px;
+	background: #574b96;
+	border: 0px;
+	color:#fff;
+}
+.head_searchtext{
+	position: absolute;
+	left: 170px;
+	top: 70px;
+	margin-top: 5px;
+}
+.head_searchtext a{
+	margin-left: 30px;
+	text-decoration: none;
+	color: #666;
+}
+.head_searchtext a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.head_searchapps{
+	position: absolute;
+	left:84%;
+	top:-5px;
+}
+.head_searchul{
+	position: absolute;
+	left: 160px;
+	top: 100px;
+	line-height: 35px;
+}
+.head_searchul li{
+	float: left;
+	margin-left: 40px;
+
+}
+.head_searchul li a{
+	font-weight: 600;
+	color: #000;
+	font-size: 14;
+}
