@@ -130,51 +130,56 @@
 	position: relative;
 	padding-bottom: 2px;
 }
-#webf1{
+.webf1 {
 	width: 180px;
 	height: 61px;
 	position: relative;
 	color: #fff;
-	padding-top:5px; 
 	cursor: pointer;
-}
-#webf1 strong{
-	font-size: 16px;
-	padding-left: 30px;
-	padding-left: 10px;
-}
-#webf1 p{
-	margin-left: 10px;
-	width: 170px;
-	height:45px ;
-}
-#webf1 p a{
-	width: 50px;
-	height: 45px;
-	float: left;
-	color: #BBBBBB;
 	
 }
-#webf1 dd{
+.webf1_js_bg{
+	background: #FFFFFF;
+}
+.webf1_js_color_strong{
+	color: #463B7E ;
+}
+.webf1_js_color_a{
+	color:#CCCCCC;
+}
+.webf1 dt{
+	padding: 5px 0 0 10px;
+}
+.webf1 dt p{
+	padding-top: 5px;
+	
+	white-space: nowrap;
+}
+.webf1 dt p a{
+	color:#CCCCCC;
+}
+.webf1 dd{
 	border: 1px solid #463B7E;
+	border-left: none;
 	position: absolute;
 	left: 180px;
-	top: -2px;s
-	width: 540px;
+	top: -2px;
+	width: 300px;
 	height: 562px;
 	background: #FFFFFF;
 	color: #463B7E ;
 	padding: 0 20px;
+	display: none;
 }
-#webf1 dd ul li{
+.webf1 dd ul li{
 	padding-top: 5px;
 	padding-left: 10px;
 	
 }
-#webf1 a{
+.webf1 a{
 	color: #767676;
 }
-#webf1 a:hover{
+.webf1 a:hover{
 	color: red;
 	text-decoration: underline;
 }
@@ -187,11 +192,79 @@
 .float-list-cont a em{
 	margin: 0 5px;	
 }
+.webf1 dd ul li strong{
+	width: 300px;
+	float: left;
+	margin: 15px;
+}
 .float-list-cont{
 	display: block;
+	margin-top: 20px;
 	padding-left: 10px;
 	width: 300px;
-	height: 159px;
-	border-bottom: 1px dotted #463B7E;
+	
 }
-
+.floorList{
+	width: 1200px;
+	padding: 0 0 50px 0;
+	margin: 0 auto;
+}
+.floor01{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 12px;
+	font-size: 0;
+	text-align: right;
+}
+.floor01 img{
+	transition: width .4s ease-in-out,height .4s ease-in-out;
+}
+.floor01 img:hover{
+	opacity: .5;
+}
+.floor01 p{
+	display: inline-block;
+	width: 330px;
+	height: 198px;
+	margin-left: 10px;
+	transition: width .4s ease-in-out,height .4s ease-in-out;
+}
+img{
+	vertical-align: middle;
+	border: 0;
+}
+.m-tit{
+	width: 100%;
+	position: relative;
+}
+.m-tit a.t1{
+	background-position: 0 -22px;
+	margin-bottom: 10px;
+}
+.m-tit a{
+	color: #000;
+	width: 201px;
+	height: 19px;
+	margin: 0 auto;
+	display: block;
+	background: url(../img/ico_index2.png);
+}
+.m-tit .tbd{
+	text-align: center;
+	background: #fff;
+	height: 35px;
+}
+.m-tit span{
+	display: inline-block;
+	font: 14px/35px "microsoft yahei";
+	color: #333;
+	padding: 0 23px;
+	background: #fff;
+}
+.hw-con li{
+	float: left;
+	font: 12px/37px "microsoft yahei";
+	color: #999;
+	height: 35px;
+	padding: 0 3px;
+}
