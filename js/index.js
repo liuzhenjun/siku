@@ -116,23 +116,28 @@
 			$(".webf1 dd").eq($(this).index()).css("display", "none");
 		}
 	)
-	/*$(".webf1").mouseover(function(){
-		
-		$(".webf1 dt").eq($(this).index()).addClass("webf1_js_bg");
-		$(".webf1 dt strong").eq($(this).index()).addClass("webf1_js_color_strong");
-		$(".webf1 dt a").eq($(this).index()).addClass("webf1_js_color_a");
-		$(".webf1 dt a:hover").eq($(this).index()).css("color", "red");
-		$(".webf1 dd").eq($(this).index()).css("display", "block");
-		$(".webf1 dd").eq($(this).index()).css("top", -($(this).index()*40)+"px");
-	})
-	$(".webf1").mouseout(function(){
-		
-		$(".webf1 dt").eq($(this).index()).removeClass("webf1_js_bg");
-		$(".webf1 dt strong").eq($(this).index()).removeClass("webf1_js_color_strong");
-		$(".webf1 dt a").eq($(this).index()).removeClass("webf1_js_color_a");
-		$(".webf1 dt a:hover").eq($(this).index()).css("color", "red");
-		$(".webf1 dd").eq($(this).index()).css("display", "none");
-	})*/
-//})
+	
+	$(".pro-list li a").hover(
+		function(){
+			/*var index = $(this).index();
+			$(".pro-list i").eq($(this).index()).stop().animate({left:"480px"},"slow",function(){
+				$(".pro-list i").eq(index).css("left", "-160px");
+				console.log(index);
+			});*/
+			$(this).find("i").stop();
+			$(this).find("i").css("left", "-160px");
+			$(this).find("i").animate({left:"160px"},"slow");
+			
+		}
+	)
+	
+	$(".floor01 img").hover(
+		function(){
+			$(this).find(".lazyImg").stop();
+			$(this).find(".lazyImg").css("opacity", 1);
+			$(this).find(".lazyImg").animate({opacity:.5}, "slow");
+		}
+	)
+
 
 
