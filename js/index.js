@@ -117,16 +117,17 @@
 		}
 	)
 	
-	$(".pro-list li a").hover(
+	$(".pro-list li a").mouseover(
 		function(){
 			/*var index = $(this).index();
 			$(".pro-list i").eq($(this).index()).stop().animate({left:"480px"},"slow",function(){
 				$(".pro-list i").eq(index).css("left", "-160px");
 				console.log(index);
 			});*/
-			$(this).find("i").stop();
+			/*$(this).find("i").stop();
 			$(this).find("i").css("left", "-160px");
-			$(this).find("i").animate({left:"160px"},"slow");
+			$(this).find("i").animate({left:"160px"},"slow");*/
+			$(this).find("i").stop().animate({left:"160px",opacity:1},500).animate({left:"-160px",opacity:0},500);
 			
 		}
 	)
