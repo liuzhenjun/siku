@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>购物车</title>
+</head>
+<body>
+	<div class="carHeader">
+		<div class="carHeaderCon clearfix">
+			<div class="logo fl">
+				<a href="#">
+					<img src="../img/logo.png" width="30" height="70"/>
+				</a>
+			</div>
+			<div class="fr">
+				<img src="../img/c_05.jpg" id="cart_icon" width="350" height="70"/>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<div class="centerBox">
+			<div class="cartNav clearfix">
+				<div class="fl navLogin padLeft18">
+					现在
+					<a href="#">登录</a>
+					您购物车中的商品将被永久保存
+				</div>
+			</div>
+			<div class="cartBox" style="display: block;">
+				<div class="cartSlist">
+					<table border="0" cellspacing="0" cellpadding="0" class="carTable">
+						<thead>
+							<tr>
+								<th width="75">
+									<input type="checkbox" name="choseAll" id="choseAll" value="" checked/>
+									<label for="choseAll">全选</label>
+								</th>
+								<th width="355" colspan="2">商品名称</th>
+								<th width="96">发货站</th>
+								<th width="96">价格</th>
+								<th width="140">数量</th>
+								<th width="110">金额小计</th>
+								<th width="110">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="addChecked" name="vartRow">
+								<td>
+									<input class="checkBox" type="checkbox" checked/>
+								</td>
+								<td width="97" valign="top">
+									<div class="cartPic fl padRight15">
+										<a href="#">
+											<img src="" alt="" width="80" height="80"/>
+										</a>
+									</div>
+								</td>
+								<td valign="top">
+									<div class="cartNames fl">
+										<p class="namePro">
+											<a href="#"></a>
+										</p>
+									</div>
+									<div class="cartNames fl" style="overflow: hidden;">
+										<p class="namePro color999 pad45"></p>
+									</div>
+								</td>
+								<td valign="top"></td>
+								<td valign="top">
+									<span class="rmb"></span>
+								</td>
+								<td valign="top">
+									<div class="countNum clearfix">
+										<div class="cPlus fl" action="decrease">
+											-
+										</div>
+										<div class="cInput fl">
+											<input class="Num" type="text" name="quantity" action="goto" value="1" onblur="" onkeydown=""/>
+										</div>
+										<div class="cMinus fl" action="increase" onclick>
+											+									
+										</div>
+									</div>
+								</td>
+								<td valign="top">
+									<strong class="colore93">
+										<span class="rmb colore93"></span>
+									</strong>
+									<div>
+										
+									</div>
+								</td>
+								<td valign="top">
+									<a href="#" class="del" name="deleteRow">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

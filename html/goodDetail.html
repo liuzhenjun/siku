@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>商品详情页</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/head.css"/>
+<link rel="stylesheet" type="text/css" href="../css/goodDetail.css"/>
+<body>
+	<div class="goodDH">
+	
+	</div>
+	<div class="gContent clearfix">
+		<div class="gContent1">
+			<ul>
+				<li><a>首页</a> > </li>
+				<li><a>包袋</a> > </li>
+				<li><a>单肩包</a> > </li>
+				<li><a>博柏利</a> > </li>
+				<li>BURRERRY/博柏利  女士小号迷彩 格纹斜背包 单肩包</li>
+			</ul>
+			<div class="gContent_r">
+				商品编码：13887647
+			</div>
+		</div>
+		<div class="gContent2">
+			<div class="info_l">
+				<dl id="imgshow">
+					<dt>
+						<div class="imgshow_x">
+							<a href="#">
+								<img src="../img/ditail/good1.jpg" width="80" height="80"/>
+							</a>
+							<a href="#">
+								<img src="../img/ditail/good2.jpg" width="80" height="80"/>
+							</a>
+							<a href="#">
+								<img src="../img/ditail/good3.jpg" width="80" height="80"/>
+							</a>
+							<a href="#">
+								<img src="../img/ditail/good4.jpg" width="80" height="80"/>
+							</a>
+							<a href="#">
+								<img src="../img/ditail/good5.jpg" width="80" height="80"/>
+							</a>
+						</div>
+						<div class="imgshow_xx">
+							<img src="../img/ditail/big1.jpg" width="420px" height="400"/>
+						</div>
+						<div class="imgshow_big">
+							
+						</div>
+					</dt>
+					<dd></dd>
+				</dl>
+			</div>
+			<div class="info_r">
+				<div class="info_name">
+					BURBERRY/博柏利 女士小号迷彩 格纹斜背包 单肩包
+				</div>
+				<div class="info_p">
+					<p>一口价<span>  ￥   </span>6,728</p>
+				</div>
+				<div class="info_huo">
+					<p>发货地       &nbsp;&nbsp;     <a style="color: #574B96;">     香港</a>有货   预计<span style="color: red;">3-15</span>个工作日内送达 全场包邮，包关税</p>
+				</div>
+				<div class="tishi clearfix" style="height: 70px;">
+					<div class="tishi_l" style="width: 80px; float: left;height: 30px;line-height: 30px;">
+						温馨提示
+					</div>
+					<div class="tishi_r" style="width: 200px;float: left;height: 30px;line-height: 30px;">
+						本商品无质量问题不支持退换货<br />
+						本商品不支持货到付款
+					</div>
+				</div>
+				<div class="yanghu">
+					<div class="yanghu_l"  style="width: 80px; float: left;height: 30px;line-height: 30px;">
+						养护活动
+					</div>
+					<div class="yanghu_r" style="width: 300px;">
+						<a>
+							<span><em>赠送200元奢护代金券</em></span>
+						</a>
+					</div>
+				</div>
+				<div class="proList_box clearfix">
+					<div class="proList clearfix psize" id="colorSpec">
+						
+					
+						<div class="pdt fl" id="flagcolor1">
+							颜色
+						</div>
+						<div class="pdd fl">
+							<ul>
+								<li class="on">
+									<a href="#">
+										<span>
+											<img src="../img/ditail/good50x50.jpg" width="30" height="30"/>
+										</span>
+									</a>
+									<label></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="proList clearfix pNum">
+						<div class="pdt fl">
+							购买数量
+						</div>
+						<div class="pdd fl">
+							<div class="countNm">
+								<a href="#" class="down fl" id="subProduct"></a>
+								<span class="num fl">
+									<input type="text" name="buyNumVal" id="buyNumVal" value="1" />
+								</span>
+								<a href="#" class="up fl" id="addProduct"></a>
+							</div>
+						</div>
+						<div class="prompt clearfix">
+							<a href="#" class="topanic fl" id="addBindCar"></a>
+							<a href="#" class="tocart fl" id="addCarInfo"></a>
+							<a href="#" class="staging fl" id="addfq">
+								<i></i>
+								分期支付
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/goodDetail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/simpleZoom.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+	//cookie改变登录状态
+		var denglu=$.cookie("people")?$.cookie("people"):"{}";
+		var user1=JSON.parse(denglu);
+		for(index2 in user1){
+			console.log(user1[index2].Name);
+			$('<p style="position: absolute;left: 0;top: 0;background: #FFFFFF;color: red;padding-left: 10px;">'+user1[index2].Name+'</p>').appendTo($(".head_user"));
+			$('<a style="position: absolute;left: 10px;top: 0;background: #FFFFFF;color:#666666;width: 60px;padding-left: 15px;">退出</a>').appendTo($(".head_tui"));
+		}
+	//ajax加载头部
+		$.ajax({
+			url:"common/header.html",
+			type:"GET",
+			async:false,
+			success:function(data){
+				$(".goodDH").html(data);
+			}
+		})
+	//放大镜效果
+	$(".imgshow_x a").hover(function(){
+		var indexX=$(this).index()+1;
+		$(".imgshow_xx").find("img").attr("src","../img/ditail/big"+indexX+".jpg");
+	})
+	$(".imgshow_xx img").mouseenter(function(){
+		$(".imgshow_big").css("display","block");
+		$(".imgshow_xx img").mousemove(function(){
+			
+		})
+	})
+	
+	</script>
+</body>
+</html>

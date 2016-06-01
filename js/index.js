@@ -1,5 +1,7 @@
 
 //$("document").ready(function(){
+	
+	
 	var index = 0;
 	var l = $(".skSliderimg ul li").size();
 	function myshow(){
@@ -117,7 +119,7 @@
 		}
 	)
 	
-	$(".pro-list li a").mouseover(
+	$(".pro-list li a").mouseenter(
 		function(){
 			/*var index = $(this).index();
 			$(".pro-list i").eq($(this).index()).stop().animate({left:"480px"},"slow",function(){
@@ -127,7 +129,8 @@
 			/*$(this).find("i").stop();
 			$(this).find("i").css("left", "-160px");
 			$(this).find("i").animate({left:"160px"},"slow");*/
-			$(this).find("i").stop().animate({left:"160px",opacity:1},500).animate({left:"-160px",opacity:0},500);
+			var Owidth=$(this).outerWidth();
+			$(this).find("i").stop().animate({'left':Owidth},500).animate({'left':"-160px"},1);
 			
 		}
 	)
@@ -140,5 +143,130 @@
 		}
 	)
 
+	//侧边栏
+	/*$(".togo a").mouseover(function(){
+		var index=$(this).index();
+		console.log(index);
+		$(this).find("em").css("display", "block").siblings().find("em").css("display", "none");
+		
+	})*/
+	/*$(".togo a").each(function(){
+		$(".togo a").eq($(this).index()).find("em").css("display", "block");
+	})*/
+	var isClick=false;
+	$(".togo a").hover(
+		function(){
+			/*$(this).find("em").css("display", "block").siblings().find("em").css("display", "none");*/
+			$(this).find("em").show();
+			$(this).find("b").hide();
+			var index=$(this).index();
+			
+			$(this).siblings().find("em").hide();
+			$(this).siblings().find("b").show();
+			/*$(this).click(function(){
+				isClick=true;
+				var iTop=$(".floorList .floor").eq(index).offset().top;
+				console.log(iTop);
+				
+				$("html,body").animate({scrollTop:iTop},function(){
+					isClick=false;
+				});
+			})*/
+		}
+	)
+	$(".togo a").click(function(){
+		isClick=true;
+		var iTop=$(".floorList .floor").eq($(this).index())
+.offset().top;
+		$("html,body").animate({scrollTop:iTop},function(){
+					isClick=false;
+		});
+	})
+	
+$(window).scroll(function(){
+	if($(window).scrollTop()>$(".floor01").offset().top){
+		$(".fsFixedTopContent").css("display","block");
+		if(!isClick){
+			var wTop=$(window).scrollTop();
+			$(".floorList .floor").each(function(){
+				if(wTop >= $(this).offset().top) {
+							var li = $(".togo a").eq($(this).index());
+							/*li.find("em").addClass("active");
+							li.siblings().find("em").removeClass("active");*/
+							li.find("em").show();
+							li.find("b").hide();
+							
+							
+							li.siblings().find("em").hide();
+							li.siblings().find("b").show();
+						}
+			})
+		}
+	}
+	else{
+		$(".fsFixedTopContent").css("display","none");
+	}
+})
+
+$(".hw-section .col1 a").hover(function(){
+	$(this).find("img").stop().animate({opacity:.8},500).animate({opacity:1});
+	
+})
+$(".hw-section .col2 a").hover(function(){
+	$(this).find("img").stop().animate({opacity:.8},500).animate({opacity:1});
+	
+})
 
 
+$(".brand-logo li .bd").hover(
+	function(){
+	/*$(this).find("a").stop().animate({'padding-left':"-60px"},500);*/
+	//$(this).find("img").stop().animate({'margin-left':'-120px'},100);
+	$(this).find("i").stop().animate({'right':0},500);
+},
+function(){
+	/*$(this).find("a").stop().animate({'margin-left':0},500);*/
+	//$(this).find("img").stop().animate({'margin-left':0},100);
+	$(this).find("i").stop().animate({'right':"-90px"},500);
+}
+)
+
+var index1=0;
+var widthSlide=230;
+var timer1 = setInterval(function(){
+	console.log("555");
+	index1++;
+	if(index1==6){
+		index1=0;
+	}
+	var SlideValue=index1*widthSlide;
+	$(".slide-m .slide ul").animate({'left':-SlideValue},300)
+},1000)
+
+$(".slide-m .prev").click(function(){
+	clearInterval(timer1);
+	index1+=2;
+	timer1 = setInterval(function(){
+	console.log("555");
+	index1++;
+	if(index1>6){
+		index1=0;
+	}
+	var SlideValue=index1*widthSlide;
+	$(".slide-m .slide ul").animate({'left':-SlideValue},300)
+},1000)
+})
+
+$(".slide-m .next").click(function(){
+	clearInterval(timer1);
+	index1-=2;
+	timer1 = setInterval(function(){
+	console.log("555");
+	index1++;
+	if(index1>6){
+		index1=0;
+	}
+	var SlideValue=index1*widthSlide;
+	$(".slide-m .slide ul").animate({'left':-SlideValue},300)
+},1000)
+})

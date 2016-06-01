@@ -1,3 +1,20 @@
+
+.kehu{
+	position: absolute;
+	width: 88px;
+	padding: 0 0 5px 11px;
+	background: #F5F5F5;
+	top: 28px;
+	border: 1px solid #eee;
+	z-index: 1;
+	display: none;
+}
+.hehu a{
+	display: inline-block;
+	text-align: left;
+	color: #999;
+	line-height: 22px;
+}
 .head{
 	width: 100%;
 	position: relative;
@@ -109,4 +126,7 @@
 	font-weight: 600;
 	color: #000;
 	font-size: 14;
+}
+.head_searchul li a:hover{
+	color: #5b4f9d;
 }

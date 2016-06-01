@@ -1,0 +1,170 @@
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size: 0;
+}
+.footer{
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 1px 0 3px rgba(240,234,237,.34);
+	position: relative;
+}
+.skSmallStyle .service{
+	background-position: 500px 0;
+}
+.footer .service{
+	padding: 21px 0 25px;
+	background: url(../img/footer/p_11.jpg) no-repeat 768px -7px;
+}
+.footer .service, .footer-nav .bd, .aboat-bd{
+	width: 1200px;
+	margin: 0 auto;
+}
+.footer .service dl.first{
+	padding-left: 10px;
+}
+.footer .service dl{
+	width: 172px;
+	float: left;
+}
+.footer .service dt{
+	font: 12px "microsoft yahei";
+	padding: 6px 0 11px;
+	list-style: none;
+}
+.footer .service dd{
+	line-height: 21px;
+}
+.service dd a{
+	color: #999;
+	font-family: "microsoft yahei";
+}
+.footer .service dl.last{
+	width: 336px;
+	float: left;
+}
+.footer .service dd div.txt{
+	font-family: "microsoft yahei";
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+.footer .service dd span{
+	display: inline-block;
+}
+.pr65{
+	padding-right: 65px;
+}
+.footer-nav{
+	width: 100%;
+	height: 23px;
+	background: #463B7F;
+	color: #F5F5F5;
+	padding: 9px 0 7px;
+}
+.footer-nav li{
+	float: left;
+	padding-left: 105px;
+	font: 14px/23px "microsoft yahei";
+}
+.footer-nav li.nf-1 i{
+	width: 22px;
+	background-position: 0 0;
+}
+.footer-nav li i{
+	background: url(../img/ico_index2.png) no-repeat;
+	height: 23px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.footer-nav li.nf-2 i{
+	width: 16px;
+	background-position: -29px 0;
+}
+.footer-nav li.nf-3 i{
+	width: 26px;
+	background-position: -49px 0;
+}
+.footer-nav li.nf-4 i{
+	width: 18px;
+	background-position: -83px 0;
+}
+.footer-nav li.nf-5 i{
+	width: 27px;
+	background-position: -104px 0;
+}
+.footer-aboat{
+	padding: 27px 0 30px;
+	color: #999;
+	background: #F5F5F5;
+}
+.aboat-bd{
+	position: relative;
+}
+.footer-aboat .links p{
+	padding-bottom: 14px;
+}
+.footer-aboat .links a{
+	padding: 0 10px;
+	color: #999;
+	font-family: "microsoft yahei";
+	float: left;
+}
+.footer-aboat .links p span{
+	display: none;
+	margin: 0 5px 0 6px;
+	border-right: 1px solid #999;
+	vertical-align: -6%;
+}
+.footer-aboat .copyright p{
+	padding-bottom: 14px;
+}
+.footer-aboat .copyright p span{
+	font-family: "microsoft yahei";
+	padding: 0 10px;
+	color: #999;
+}
+.footer-aboat .links p{
+	padding-bottom: 14px;
+}
+.footer-aboat .links a{
+	padding: 0 10px;
+	color: #999;
+	font-family: "microsoft yahei";
+	float: left;
+}
+.footer-aboat .links p span{
+	display: none;
+	margin: 0 5px 0 6px;
+	border-right: 1px solid #999;
+	vertical-align: -6%;
+}
+.footer-aboat .copyright p span{
+	font-family: "microsoft yahei";
+	padding: 0 10px;
+	color: #999;
+}
+.authentication a{
+	padding: 0 10px;
+	float: left;
+	margin-top: 3px;
+}
+.footer-aboat ul.ewm{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+.footer-aboat ul.ewm li{
+	float: left;
+	width: 110px;
+	text-align: center;
+}
+.footer-aboat ul.ewm li.last{
+	margin-left: 20px;
+}

@@ -7,6 +7,9 @@
 	height: 0;
 	font-size: 0;
 }
+a:hover{
+	color: #5b4f9d;
+}
 /*导航栏样式*/
 
 .contanier{
@@ -24,6 +27,12 @@
 	position: relative;
 	background-color: #84ccd8;
 	
+}
+.contanier_banner{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	background: #000;
 }
 .skSlider{
 	width:1030px;
@@ -119,6 +128,7 @@
 	z-index: 91;
 	
 }
+
 .skSlider_listdiv a{
 	color: #fff;
 	text-indent: -2px;
@@ -762,4 +772,266 @@ div{
 	float: right;
 	height: 32px;
 	padding: 0;
+}
+.p61{
+	padding: 61px 0 60px;
+}
+.m-tit{
+	width: 100%;
+	position: relative;
+}
+.m-tit span{
+	display: inline-block;
+	font: 14px/35px "microsoft yahei";
+	color: #333;
+	padding: 0 23px;
+	background: #fff;
+}
+.m-tit a{
+	background: url(../img/ico_index2.png);
+	display: inline-block;
+	color: #000;
+	width: 201px;
+	height: 19px;
+	margin: 0 auto;
+	display: block;
+}
+.m-tit a.t5{
+	cursor: default;
+	background-position: -50px -109px;
+	display: inline-block;
+	width: 100px;
+	position: relative;
+	top: 4px;
+}
+#slideM1{
+	width: 100%;
+	height: 215px;
+	background: none;
+}
+.slide-m{
+	width: 320px;
+	height: 250px;
+	overflow: hidden;
+	background: #F0F0F0;
+	position: relative;
+}
+#slideM1 .slide{
+	width: auto;
+	margin: 0 25px;
+	background: url(../img/floor-nav/loding.gif) no-repeat center center;
+}
+.slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slide .slide-con{
+	width: 1200px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#slideM1 .slide-con li{
+	width: 190px;
+	padding: 0 20px;
+	text-align: center;
+	background: #fff;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.slide-m a{
+	display: block;
+}
+.slide-m .box{
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	
+}
+.slide-m{
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+	padding-left: 10px;
+	color: #333;
+	font: 12px "microsoft yahei";
+	width: 200px;
+	height: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow:ellipsis;
+	text-overflow: ellipsis;
+}
+.slide .price b{
+	font-family: "microsoft yahei";
+}
+.slide-m .name{
+	display: block;
+	padding-left: 10px;
+	color: #333;
+	font: 12px "microsoft yahei";
+	width: 200px;
+	height: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.slide-m .price{
+	height: 14px;
+	color: rgb(102,102,102);
+}
+
+.slide-m .prev, .slide-m .next{
+	cursor: pointer;
+	width: 21px;
+	height: 53px;
+	position: absolute;
+	z-index: 3;
+	top: 79px;
+	opacity: .5;
+	background: url(../img/ico_index2.png) no-repeat;
+	display: inline-block;
+}
+.slide-m .prev{
+	background-position: -235px -23px;
+	left: 0;
+}
+.slide-m .next{
+	right: 0;
+	background-position: -257px -23px;
+}
+.footer_html{
+	width: 100%;
+	float: left;
+}
+.bady_container{
+	width: 100%;
+	height: 7852px;
+}
+.fsFixedTopContent{
+	z-index: 99999998;
+	overflow: visible;
+	width: 81px;
+	height: 500px;
+	background: rgba(255,255,255,.80);
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin: -250px 0 0 0px;
+	z-index: 3333;
+}
+.fsFixedTop{
+	width: 75px;
+	height: 480px;
+	position: absolute;
+	left: 3px;
+	top: 11px;
+}
+.fsFixedTop .togo{
+	height: 450px;
+	overflow: hidden;
+}
+.fsFixedTop a{
+	width: 75px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.fsFixedTop b.fs01{
+	background-position: 0 -228px;
+}
+.fsFixedTop b{
+	width: 100%;
+	height: 18px;
+	position: absolute;
+	background: url(../img/ico_index2.png);
+	top: 11px;
+	left: 0;
+	z-index: 1;
+}
+.fsFixedTop .fs-name{
+	height: 30px;
+	color: #E93B39;
+	font: 14px/30px "microsoft yahei";
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: none;
+	line-height: 30px;
+}
+.fsFixedTop .fs-line{
+	display: none;
+	width: 100%;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-top: 2px solid #000;
+	position: absolute;
+	left: 0;
+	top: 26px;
+	z-index: 3;
+}
+.fsFixedTop b.fs02{
+	background-position: -75px -228px;
+}
+.fsFixedTop b.fs03{
+	background-position: -150px -228px;
+}
+.fsFixedTop b.fs04{
+	background-position: -225px -228px;
+}
+.fsFixedTop b.fs05{
+	background-position: 0 -258px;
+}
+.fsFixedTop b.fs06{
+	background-position: -75px -258px;
+}
+.fsFixedTop b.fs07{
+	background-position: -150px -258px;
+}
+.fsFixedTop b.fs08{
+	background-position: 0 -288px;
+}
+.fsFixedTop b.fs09{
+	background-position: -225px -288px;
+}
+.fsFixedTop b.fs10{
+	background-position: -75px -288px;
+}
+.fsFixedTop b.fs11{
+	background-position: -150px -288px;
+}
+.fsFixedTop b.fs12{
+	background-position: 0 -318px;
+}
+.fsFixedTop b.fs13{
+	background-position: -75px -318px;
+}
+.fsFixedTop b.fs14{
+	background-position: -150px -318px;
+}
+.fsFixedTop b.fs15{
+	background-position: -225px -288px;
+}
+.fsFixedTop b.fs16{
+	background-position: -254px -80px;
+	height: 26px;
+	top: 2px;
+}
+.fsFixedTop a.fsbacktotop{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.logo_hidd{
+	display: none;
 }
